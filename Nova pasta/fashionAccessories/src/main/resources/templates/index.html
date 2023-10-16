@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>FA</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css//bootstrap.min.css">
+
+</head>
+
+<body>
+
+<nav class="left-menu">
+<ul>
+<li class="itens-menu">
+<a href="#" disabled>
+</a>
+</li>
+<li class="itens-menu">
+<a th:href="@{/api/usuario/login}" class="btn btn-primary btn-lg shadow p-3"</a>
+<span  class="icone"><i class="bi bi-person-badge"></i></span>
+<span class="text-link">Acessar o Sistema</span>
+</a>
+</li>
+<li class="itens-menu">
+<a th:href="@{/api/produto/lista}" class="btn btn-warning btn-lg shadow p-3"</a>
+<span  class="icone"><i class="bi bi-people-fill"></i></span>
+<span class="text-link">Nossos Produtos</span>
+</a>
+</li>
+<li class="itens-menu">
+<a th:href="@{/api/usuario/novo-login}" class="btn btn-success btn-lg shadow p-3"> <span class="text-link">Criar Conta</span> </a>
+
+
+</li>
+</ul>
+</nav>
+
+    <div class="top-h1">
+        <h1 class="text-center mt-5">Fashion Accessories</h1>
+    </div>
+    
+    
+   
+    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
